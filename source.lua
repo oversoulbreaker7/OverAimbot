@@ -1,16 +1,13 @@
-local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Streekaiz/Visual-UI-Library/main/Source.lua'))()
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
-local Window = Library:CreateWindow('Over Aimbot','Universal')
+local win = DiscordLib:Window("Oversoul Hub")
 
-local Tab = Window:CreateTab('Main', true, 'rbxassetid://3926305904', Vector2.new(484, 44), Vector2.new(36, 36))
+local serv = win:Server("Main", "")
 
-local Section = Tab:CreateSection('Main')
+local btns = serv:Channel("Buttons")
 
-local Label = Section:CreateLabel('This is A Label')
-
-
-local Button = Section:CreateButton('Button', function()
-local teamCheck = false
+ btns:Button("Aimbot", function()
+local teamCheck = true
 local fov = 120
 local smoothing = 0.02
 local predictionFactor = 0.08  -- Adjust this factor to improve prediction accuracy
