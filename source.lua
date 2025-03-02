@@ -10,7 +10,7 @@ local Label = Section:CreateLabel('This is A Label')
 
 
 local Button = Section:CreateButton('Button', function()
-    local teamCheck = false
+local teamCheck = false
 local fov = 120
 local smoothing = 0.02
 local predictionFactor = 0.08  -- Adjust this factor to improve prediction accuracy
